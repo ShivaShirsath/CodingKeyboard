@@ -6,7 +6,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "ss.dark.GitHub"
+        applicationId "ss.CodingKeyboardboard"
         minSdk 21
         targetSdk 32
         versionCode 1
