@@ -17,8 +17,7 @@
             android:killAfterRestore="false"
             android:icon="@drawable/ic_logo">
 
-        <service android:name="LatinIME"
-                android:label="@string/english_ime_name"
+        <service android:name="LatinIME" android:exported="true" android:label="@string/english_ime_name"
                 android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
@@ -26,14 +25,14 @@
             <meta-data android:name="android.view.im" android:resource="@xml/method" />
         </service>
 
-        <activity android:name="Main" android:label="Coding Keybaord">
+        <activity android:name="Main" android:exported="true" android:label="Coding Keybaord">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <activity android:name="LatinIMESettings" android:label="@string/english_ime_settings">
+        <activity android:name="LatinIMESettings" android:exported="true" android:label="@string/english_ime_settings">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="ss.CodingKey.SETTINGS"/>
@@ -41,8 +40,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="InputLanguageSelection"
-                android:label="@string/language_selection_title">
+        <activity android:name="InputLanguageSelection" android:exported="true" android:label="@string/language_selection_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="ss.CodingKey.INPUT_LANGUAGE_SELECTION"/>
@@ -50,8 +48,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="PrefScreenActions"
-                android:label="@string/pref_screen_actions_title">
+        <activity android:name="PrefScreenActions" android:exported="true" android:label="@string/pref_screen_actions_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="ss.CodingKey.PREFS_ACTIONS"/>
@@ -59,8 +56,7 @@
             </intent-filter>
         </activity>
             
-        <activity android:name="PrefScreenView"
-                android:label="@string/pref_screen_actions_title">
+        <activity android:name="PrefScreenView" android:exported="true" android:label="@string/pref_screen_actions_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="ss.CodingKey.PREFS_VIEW"/>
@@ -68,8 +64,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="PrefScreenFeedback"
-                android:label="@string/pref_screen_feedback_title">
+        <activity android:name="PrefScreenFeedback" android:exported="true" android:label="@string/pref_screen_feedback_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="ss.CodingKey.PREFS_FEEDBACK"/>
