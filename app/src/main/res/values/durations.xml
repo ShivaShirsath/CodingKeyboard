@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Vibration duration in milliseconds, for key presses in the IME. This can be hardware
+        dependent and may require overriding with a device specific overlay. -->
+    <string name="vibrate_duration_ms">40 ms</string>
+</resources>
